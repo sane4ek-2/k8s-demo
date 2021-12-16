@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: caller-pod
+spec:
+  containers:
+    - name: ctr-1
+      image: alpine
+      command: ["top"]

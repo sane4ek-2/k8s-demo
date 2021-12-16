@@ -1,0 +1,15 @@
+# This is the second version of the main-pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: main-pod
+  labels:
+    app: demo
+spec:
+  containers:
+    - name: ctr-1
+      image: sane4ek/example:1
+      ports:
+       - containerPort: 80
+    - name: ctr-2
+      image: php:fpm-alpine

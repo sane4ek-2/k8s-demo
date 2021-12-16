@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: main-pod
+spec:
+  containers:
+    - name: ctr-1
+      image: sane4ek/example:1
+      ports:
+       - containerPort: 80
+    - name: ctr-2
+      image: php:fpm-alpine
